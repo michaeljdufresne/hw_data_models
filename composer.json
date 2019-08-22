@@ -1,0 +1,35 @@
+{
+    "name": "edumedics/healthward-data-models",
+    "description": "Healthward Data Models",
+    "type": "library",
+    "repositories": {
+        "repo-name": {
+            "type": "composer",
+            "url": "https://packages.sentryhealth.com"
+        }
+    },
+    "require": {
+        "php": ">=7.1.3",
+        "illuminate/database": "5.6.*",
+        "illuminate/notifications": "5.6.*",
+        "illuminate/support": "5.6.*",
+        "symfony/http-foundation": "~4.0",
+        "zizaco/entrust": "dev-master",
+        "sentryhealth/healthward-kafka-service": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Edumedics\\": "src/Edumedics"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Dufresne",
+            "email": "michael.dufresne@sentryhealth.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
